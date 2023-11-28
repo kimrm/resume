@@ -35,10 +35,18 @@ const Resume = React.forwardRef((props, ref) => {
             </div>
             <div className="bg-gray-50 rounded p-1">Sosiale medier</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 flex flex-col gap-4">
-              <a href="https://www.linkedin.com/in/kimrune/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/kimrune/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 LinkedIn [https://www.linkedin.com/in/kimrune]
               </a>
-              <a href="https://github.com/kimrm" target="_blank">
+              <a
+                href="https://github.com/kimrm"
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub [https://github.com/kimrm]
               </a>
             </div>
@@ -49,6 +57,7 @@ const Resume = React.forwardRef((props, ref) => {
             className="inline-block"
             href="https://www.credly.com/badges/4b881ada-b52c-40d5-8ea3-5e22c27159fa/public_url"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={cloud101} width={100} alt="AWS Cloud 101" />
           </a>
@@ -186,5 +195,7 @@ const Resume = React.forwardRef((props, ref) => {
     </div>
   );
 });
+
+Resume.displayName = "Resume";
 
 export default Resume;

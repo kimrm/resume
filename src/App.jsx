@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import ReactToPrint from "react-to-print";
-import Resume from "Resume";
+import Resume from "./Resume.jsx";
 
 function App() {
   const ref = useRef();
