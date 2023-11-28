@@ -85,7 +85,7 @@ const Resume = React.forwardRef((props, ref) => {
             Freelance Utvikler + Student
           </h3>
           <h4 className="font-bold">2022 - Nåværende</h4>
-          <ul>
+          <ul className="list-inside md:list-outside">
             <li className="list-disc">
               Jobber med webløsninger, integrasjoner, og programvareutvikling
               for Windows.
@@ -103,7 +103,7 @@ const Resume = React.forwardRef((props, ref) => {
             IT-medarbeider, Studiesenteret Midt-Troms
           </h3>
           <h4 className="font-bold">2020 - 2022</h4>
-          <ul>
+          <ul className="list-inside md:list-outside">
             <li className="list-disc">
               Jobbet med IT/nettverk og tekniske løsninger for studierom og
               konferanserom.
@@ -120,7 +120,7 @@ const Resume = React.forwardRef((props, ref) => {
             Utvikler, Dataprodukt AS
           </h3>
           <h4 className="font-bold">2006 - 2020</h4>
-          <ul>
+          <ul className="list-inside md:list-outside">
             <li className="list-disc">
               Spilte en nøkkelrolle i utviklingen av FleXi Bilsystem, et Dealer
               Management System brukt av Mazda og Hyundai forhandlere i Norge.
@@ -144,7 +144,7 @@ const Resume = React.forwardRef((props, ref) => {
             Freelance Webutvikler
           </h3>
           <h4 className="font-bold">2002 - 2006</h4>
-          <ul>
+          <ul className="list-inside md:list-outside">
             <li className="list-disc">
               Utviklet webløsninger, hjemmesider og nettbutikker.
             </li>
@@ -166,7 +166,7 @@ const Resume = React.forwardRef((props, ref) => {
           Utdannelse
         </h2>
 
-        <div className="block mt-8">
+        <div className="block mt-3">
           <h3 className="my-3 text-lg font-bold text-orange-900">
             Noroff University College
           </h3>
