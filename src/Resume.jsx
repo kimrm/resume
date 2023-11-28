@@ -38,18 +38,18 @@ const Resume = React.forwardRef((props, ref) => {
             </div>
             <div className="bg-gray-50 col-span-3 rounded p-1 flex flex-col gap-4 text-gray-950">
               <a
-                href="www.linkedin.com/in/kim-rune-moller"
+                href="https://www.linkedin.com/in/kim-rune-moller"
                 target="_blank"
                 rel="noreferrer"
               >
-                LinkedIn [www.linkedin.com/in/kim-rune-moller]
+                LinkedIn [linkedin.com/in/kim-rune-moller]
               </a>
               <a
                 href="https://github.com/kimrm"
                 target="_blank"
                 rel="noreferrer"
               >
-                GitHub [https://github.com/kimrm]
+                GitHub [github.com/kimrm]
               </a>
             </div>
           </div>
