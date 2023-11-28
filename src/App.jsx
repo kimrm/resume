@@ -12,10 +12,13 @@ function App() {
           content={() => ref.current}
           trigger={() => (
             <button className="rounded border border-orange-950 hover:bg-orange-100 text-organge-950 px-2 py-1">
-              Skriv ut CV
+              Skriv ut
             </button>
           )}
         />
+        <button className="rounded border border-orange-950 hover:bg-orange-100 text-organge-950 px-2 py-1">
+          PDF
+        </button>
       </div>
       <Resume ref={ref} />
     </>

@@ -17,12 +17,18 @@ const Resume = React.forwardRef((props, ref) => {
               KIM RUNE MØLLER
             </h1>
             <h2 className="text-lg md:text-2xl font-black uppercase tracking-widest my-3">
-              Web Developer
+              Web og programvareUtvikler
             </h2>
           </div>
         </div>
         <div>
           <div className="grid grid-cols-4 gap-y-3 bg-white rounded p-4 my-5 text-xs md:text-base">
+            <div className="bg-gray-50 rounded p-1 text-gray-500">
+              Fødselsdato
+            </div>
+            <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
+              21. november 1978
+            </div>
             <div className="bg-gray-50 rounded p-1 text-gray-500">Adresse</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               Vågahaugen 55, 9303 Silsand
@@ -33,11 +39,9 @@ const Resume = React.forwardRef((props, ref) => {
             </div>
             <div className="bg-gray-50 rounded p-1 text-gray-500">E-post</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
-              kimrune@hotmail.no
+              kim@kimrune.dev
             </div>
-            <div className="bg-gray-50 rounded p-1 text-gray-500">
-              Sosiale medier
-            </div>
+            <div className="bg-gray-50 rounded p-1 text-gray-500">På nett</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 flex flex-col gap-4 text-gray-950">
               <a
                 href="https://www.linkedin.com/in/kim-rune-moller"
@@ -53,6 +57,13 @@ const Resume = React.forwardRef((props, ref) => {
               >
                 GitHub [github.com/kimrm]
               </a>
+              <a
+                href="https://portfolio.kimrune.dev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Min front-end portfolio [portfolio.kimrune.dev]
+              </a>
             </div>
           </div>
         </div>
@@ -63,9 +74,11 @@ const Resume = React.forwardRef((props, ref) => {
         </h2>
         <p className="rounded text-orange-950">
           Allsidig programmerer med omfattende erfaring i .NET, VB.NET,
-          WinForms, C#, Java (JSP), PHP og Javascript. Har en solid bakgrunn i
-          webutvikling og applikasjonsutvikling for Windows. Søker nye
-          utfordringer i front-end eller full-stack stillinger.
+          WinForms, C#, PHP og Javascript. Har en solid bakgrunn i webutvikling
+          og applikasjonsutvikling for Windows. Har også interesse for det
+          forretningmessige aspektet ved utvikling av programvare og tjenester.
+          Søker nye utfordringer der jeg kan fortsette å utvikle meg som
+          programmerer samt lære om nye områder innen IT.
         </p>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
