@@ -65,7 +65,7 @@ const Resume = React.forwardRef((props, ref) => {
           </a>
         </div>
       </section>
-      <section className="container mx-auto my-10">
+      <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
           Profesjonell Sammendrag
         </h2>
@@ -76,7 +76,7 @@ const Resume = React.forwardRef((props, ref) => {
           utfordringer i front-end eller full-stack stillinger.
         </p>
       </section>
-      <section className="container mx-auto my-10">
+      <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
           Arbeidserfaring
         </h2>
@@ -149,7 +149,7 @@ const Resume = React.forwardRef((props, ref) => {
           </li>
         </ul>
       </section>
-      <section className="container mx-auto my-10">
+      <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
           Utdannelse
         </h2>
@@ -174,7 +174,7 @@ const Resume = React.forwardRef((props, ref) => {
         <h4 className="font-bold">2001</h4>
         <p>Kurs: Grunnkurs i informasjonsteknologi, Grunnkurs i databaser.</p>
       </section>
-      <section className="container mx-auto my-10">
+      <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
           Ferdigheter
         </h2>
