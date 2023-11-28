@@ -16,9 +16,6 @@ function App() {
             </button>
           )}
         />
-        <button className="bg-orange-950 text-white px-3 py-2 rounded">
-          PDF
-        </button>
       </div>
       <Resume ref={ref} />
     </>
