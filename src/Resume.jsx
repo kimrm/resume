@@ -36,11 +36,11 @@ const Resume = React.forwardRef((props, ref) => {
             <div className="bg-gray-50 rounded p-1">Sosiale medier</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 flex flex-col gap-4">
               <a
-                href="https://www.linkedin.com/in/kimrune/"
+                href="www.linkedin.com/in/kim-rune-moller"
                 target="_blank"
                 rel="noreferrer"
               >
-                LinkedIn [https://www.linkedin.com/in/kimrune]
+                LinkedIn [www.linkedin.com/in/kim-rune-moller]
               </a>
               <a
                 href="https://github.com/kimrm"
