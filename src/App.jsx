@@ -46,7 +46,7 @@ function App() {
     const y = 0; // Start at the top of the page
 
     pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
-    pdf.save("resume.pdf");
+    pdf.save("cv-kim-rune-møller.pdf");
   };
 
   return (
