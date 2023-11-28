@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Freelance Utvikler + Student",
+    "description": "",
+    "period": "2022 - nåværende",
+    "bulletpoints": [
+      "Jobber med webløsninger, integrasjoner, og programvareutvikling for Windows.",
+      "Teknologier: VSCode, Visual Studio, VB.Net, SQL, PHP, Laravel, Livewire, Tailwind, Bootstrap, Javascript, HTML, CSS, Vue,WordPress."
+    ]
+  },
+  {
+    "title": "IT-medarbeider, Studiesenteret Midt-Troms",
+    "description": "",
+    "period": "2020 - 2022",
+    "bulletpoints": [
+      "Jobbet med IT/nettverk og tekniske løsninger for studierom og konferanserom.",
+      "Utviklet en infoskjerm-løsning for rombooking integrert med Google Calendar."
+    ]
+  },
+  {
+    "title": "Utvikler, Dataprodukt AS",
+    "description": "",
+    "period": "2006 - 2020",
+    "bulletpoints": [
+      "Spilte en nøkkelrolle i utviklingen av FleXi Bilsystem, et Dealer Management System brukt av Mazda og Hyundai forhandlere i Norge.",
+      "Ansvarlig for utvikling av Windows-applikasjoner som henter data fra server-løsninger på IBM i.",
+      "Arbeidet med integrasjoner via REST API-er, SOAP Web-services og FTP.",
+      "Teknologier: Visual Studio, VB.Net, C#, SQL, PHP."
+    ]
+  },
+  {
+    "title": "Freelance Webutvikler",
+    "period": "2002 - 2006",
+    "bulletpoints": [
+      "Utviklet webløsninger, hjemmesider og nettbutikker for både store og små aktører i Norge. Var blandt annet en nøkkelperson i utviklingen av e-commerce backend til en stor aktør innen fremkalling av digitale bilder.",
+      "Teknologier: HTML, Javascript, CSS, ASP VBScript, VB.NET."
+    ]
+  }
+]

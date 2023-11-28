@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Noroff - School of Technology and Digital Media",
+    "period": "2022-2024 (pågår)",
+    "description": "Fagskolegrad som Front-endutvikler.",
+    "bulletpoints": [
+      "Design and Interaction Design",
+      "Javascript and JS frameworks",
+      "CSS, SASS and frameworks",
+      "... med mer"
+    ]
+  },
+  {
+    "title": "Høgskolen i Sør-Trøndelag",
+    "period": "2007 - 2008",
+    "description": "Diverse høgskolefag.",
+    "bulletpoints": [
+      "Web-teknikker",
+      "XML-teknologi",
+      "Programmering i Visual Basic",
+      "Applikasjonsutvikling på .NET-plattformen",
+      "C#.Net",
+      "Web-programmering med PHP"
+    ]
+  },
+  {
+    "title": "UiT Norges Arktiske Universitet",
+    "period": "2001",
+    "description": "",
+    "bulletpoints": [
+      "Grunnkurs i informasjonsteknologi",
+      "Grunnkurs i databaser"
+    ]
+  }
+]
