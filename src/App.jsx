@@ -6,7 +6,7 @@ function App() {
   const ref = useRef();
   return (
     <>
-      <div className="container mx-auto flex gap-4 top-0 right-0 mt-3 justify-end">
+      <div className="container mx-auto flex gap-4 mt-3 justify-end p-2">
         <ReactToPrint
           bodyClass="print-agreement"
           content={() => ref.current}

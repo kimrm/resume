@@ -5,36 +5,38 @@ import profile from "./profile.png";
 const Resume = React.forwardRef((props, ref) => {
   return (
     <div ref={ref}>
-      <section className="container mx-auto my-5">
-        <div className="flex items-center gap-5">
+      <section className="container mx-auto my-5 p-2 md:p-0">
+        <div className="md:flex items-center gap-5">
           <div>
             <img src={profile} width={100} alt="Kim Rune Møller" />
           </div>
           <div>
-            <h1 className="text-6xl font-black uppercase tracking-widest my-3">
+            <h1 className="text-3xl md:text-6xl font-black uppercase tracking-widest my-3">
               KIM RUNE MØLLER
             </h1>
-            <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+            <h2 className="text-lg md:text-2xl font-black uppercase tracking-widest my-3">
               Web Developer
             </h2>
           </div>
         </div>
         <div>
-          <div className="grid grid-cols-4 gap-y-3 bg-white rounded p-4 my-5">
-            <div className="bg-gray-50 rounded p-1">Adresse</div>
-            <div className="bg-gray-50 col-span-3 rounded p-1">
+          <div className="grid grid-cols-4 gap-y-3 bg-white rounded p-4 my-5 text-xs md:text-base">
+            <div className="bg-gray-50 rounded p-1 text-gray-500">Adresse</div>
+            <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               Vågahaugen 55, 9303 Silsand
             </div>
-            <div className="bg-gray-50 rounded p-1">Telefon</div>
-            <div className="bg-gray-50 col-span-3 rounded p-1">
+            <div className="bg-gray-50 rounded p-1 text-gray-500">Telefon</div>
+            <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               +47 411 29 887
             </div>
-            <div className="bg-gray-50 rounded p-1">E-post</div>
-            <div className="bg-gray-50 col-span-3 rounded p-1">
+            <div className="bg-gray-50 rounded p-1 text-gray-500">E-post</div>
+            <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               kimrune@hotmail.no
             </div>
-            <div className="bg-gray-50 rounded p-1">Sosiale medier</div>
-            <div className="bg-gray-50 col-span-3 rounded p-1 flex flex-col gap-4">
+            <div className="bg-gray-50 rounded p-1 text-gray-500">
+              Sosiale medier
+            </div>
+            <div className="bg-gray-50 col-span-3 rounded p-1 flex flex-col gap-4 text-gray-950">
               <a
                 href="www.linkedin.com/in/kim-rune-moller"
                 target="_blank"
