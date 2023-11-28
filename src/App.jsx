@@ -11,8 +11,8 @@ function App() {
           bodyClass="print-agreement"
           content={() => ref.current}
           trigger={() => (
-            <button className="bg-orange-950 text-white px-3 py-2 rounded">
-              Print
+            <button className="rounded border border-orange-950 hover:bg-orange-100 text-organge-950 px-2 py-1">
+              Skriv ut CV
             </button>
           )}
         />

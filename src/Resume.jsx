@@ -67,7 +67,7 @@ const Resume = React.forwardRef((props, ref) => {
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
-          Profesjonell Sammendrag
+          Sammendrag
         </h2>
         <p className="rounded text-orange-950">
           Allsidig programmerer med omfattende erfaring i .NET, VB.NET,
@@ -80,99 +80,132 @@ const Resume = React.forwardRef((props, ref) => {
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
           Arbeidserfaring
         </h2>
-        <h3 className="my-3 text-lg font-bold text-orange-900">
-          Freelance Utvikler + Student
-        </h3>
-        <h4 className="font-bold">2022 - Nåværende</h4>
-        <ul>
-          <li className="list-disc">
-            Jobber med webløsninger, integrasjoner, og programvareutvikling for
-            Windows.
-          </li>
-          <li className="list-disc">
-            Teknologier: VSCode, Visual Studio, VB.Net, SQL, PHP, Laravel,
-            Livewire, Tailwind, Bootstrap, Javascript, HTML, CSS, Vue,
-            WordPress.
-          </li>
-        </ul>
-        <h3 className="my-3 text-lg font-bold text-orange-900">
-          IT-medarbeider, Studiesenteret Midt-Troms
-        </h3>
-        <h4 className="font-bold">2020 - 2022</h4>
-        <ul>
-          <li className="list-disc">
-            Jobbet med IT/nettverk og tekniske løsninger for studierom og
-            konferanserom.
-          </li>
-          <li className="list-disc">
-            Utviklet en infoskjerm-løsning for rombooking integrert med Google
-            Calendar.
-          </li>
-        </ul>
-        <h3 className="my-3 text-lg font-bold text-orange-900">
-          Utvikler, Dataprodukt AS
-        </h3>
-        <h4 className="font-bold">2006 - 2020</h4>
-        <ul>
-          <li className="list-disc">
-            Spilte en nøkkelrolle i utviklingen av FleXi Bilsystem, brukt av
-            Mazda og Hyundai forhandlere i Norge.
-          </li>
-          <li className="list-disc">
-            Ansvarlig for utvikling av Windows-applikasjoner og server-løsninger
-            på IBM i.
-          </li>
-          <li className="list-disc">
-            Arbeidet med integrasjoner via REST API-er, SOAP Web-services og
-            FTP.
-          </li>
-          <li className="list-disc">
-            Teknologier: Visual Studio, VB.Net, C#, SQL, PHP.
-          </li>
-        </ul>
-        <h3 className="my-3 text-lg font-bold text-orange-900">
-          Freelance Webutvikler
-        </h3>
-        <h4 className="font-bold">2002 - 2006</h4>
-        <ul>
-          <li className="list-disc">
-            Utviklet webløsninger, hjemmesider og nettbutikker.
-          </li>
-          <li className="list-disc">
-            Bidro i utviklingen av back-end for Preus Fotos e-commerce løsning.
-          </li>
-          <li className="list-disc">
-            Teknologier: HTML, Javascript, CSS, ASP VBScript, VB.NET.
-          </li>
-          <li className="list-disc">
-            Teknologier: Visual Studio, VB.Net, C#, SQL, PHP.
-          </li>
-        </ul>
+        <div className="mt-3">
+          <h3 className="my-3 text-lg font-bold text-orange-900">
+            Freelance Utvikler + Student
+          </h3>
+          <h4 className="font-bold">2022 - Nåværende</h4>
+          <ul>
+            <li className="list-disc">
+              Jobber med webløsninger, integrasjoner, og programvareutvikling
+              for Windows.
+            </li>
+            <li className="list-disc">
+              Teknologier: VSCode, Visual Studio, VB.Net, SQL, PHP, Laravel,
+              Livewire, Tailwind, Bootstrap, Javascript, HTML, CSS, Vue,
+              WordPress.
+            </li>
+          </ul>
+        </div>
+
+        <div className="block mt-8">
+          <h3 className="my-3 text-lg font-bold text-orange-900">
+            IT-medarbeider, Studiesenteret Midt-Troms
+          </h3>
+          <h4 className="font-bold">2020 - 2022</h4>
+          <ul>
+            <li className="list-disc">
+              Jobbet med IT/nettverk og tekniske løsninger for studierom og
+              konferanserom.
+            </li>
+            <li className="list-disc">
+              Utviklet en infoskjerm-løsning for rombooking integrert med Google
+              Calendar.
+            </li>
+          </ul>
+        </div>
+
+        <div className="my-8">
+          <h3 className="my-3 text-lg font-bold text-orange-900">
+            Utvikler, Dataprodukt AS
+          </h3>
+          <h4 className="font-bold">2006 - 2020</h4>
+          <ul>
+            <li className="list-disc">
+              Spilte en nøkkelrolle i utviklingen av FleXi Bilsystem, et Dealer
+              Management System brukt av Mazda og Hyundai forhandlere i Norge.
+            </li>
+            <li className="list-disc">
+              Ansvarlig for utvikling av Windows-applikasjoner og
+              server-løsninger på IBM i.
+            </li>
+            <li className="list-disc">
+              Arbeidet med integrasjoner via REST API-er, SOAP Web-services og
+              FTP.
+            </li>
+            <li className="list-disc">
+              Teknologier: Visual Studio, VB.Net, C#, SQL, PHP.
+            </li>
+          </ul>
+        </div>
+
+        <div className="my-8">
+          <h3 className="my-3 text-lg font-bold text-orange-900">
+            Freelance Webutvikler
+          </h3>
+          <h4 className="font-bold">2002 - 2006</h4>
+          <ul>
+            <li className="list-disc">
+              Utviklet webløsninger, hjemmesider og nettbutikker.
+            </li>
+            <li className="list-disc">
+              Bidro i utviklingen av back-end for Preus Fotos e-commerce
+              løsning.
+            </li>
+            <li className="list-disc">
+              Teknologier: HTML, Javascript, CSS, ASP VBScript, VB.NET.
+            </li>
+            <li className="list-disc">
+              Teknologier: Visual Studio, VB.Net, C#, SQL, PHP.
+            </li>
+          </ul>
+        </div>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
           Utdannelse
         </h2>
-        <h3 className="my-3 text-lg font-bold text-orange-900">
-          Noroff University College
-        </h3>
-        <h4 className="font-bold">2022-2024 (pågår)</h4>
-        <p>
-          Fagskolegrad som Front-end Utvikler. Kurs: Design, Project
-          Methodology, HTML and CSS, m.m.
-        </p>
-        <h3 className="my-3 text-lg font-bold text-orange-900">
-          Høgskolen i Sør-Trøndelag
-        </h3>
-        <h4 className="font-bold">2007-2008</h4>
-        <p>
-          Kurs: Web-teknikker, XML teknologi, Programmering i Visual Basic, m.m.
-        </p>
-        <h3 className="my-3 text-lg font-bold text-orange-900">
-          UiT Norges Arktiske Universitet
-        </h3>
-        <h4 className="font-bold">2001</h4>
-        <p>Kurs: Grunnkurs i informasjonsteknologi, Grunnkurs i databaser.</p>
+
+        <div className="block mt-8">
+          <h3 className="my-3 text-lg font-bold text-orange-900">
+            Noroff University College
+          </h3>
+          <h4 className="font-bold">2022-2024 (pågår)</h4>
+          <p>
+            Fagskolegrad som Front-end Utvikler. Kurs: Design, Project
+            Methodology, HTML and CSS, m.m.
+          </p>
+        </div>
+
+        <div className="block mt-8">
+          <h3 className="my-3 text-lg font-bold text-orange-900">
+            Høgskolen i Sør-Trøndelag
+          </h3>
+          <h4 className="font-bold">2007-2008</h4>
+          <h5>Kurs</h5>
+          <ul>
+            <li className="list-disc">Web-teknikker</li>
+            <li className="list-disc">XML teknolog</li>
+            <li className="list-disc">Programmering i Visual Basic</li>
+            <li className="list-disc">
+              Applikasjonsutvikling på .NET-plattformen
+            </li>
+            <li className="list-disc">C#.NET</li>
+            <li className="list-disc">Web-programmering med PHP</li>
+          </ul>
+        </div>
+
+        <div className="block mt-8">
+          <h3 className="my-3 text-lg font-bold text-orange-900">
+            UiT Norges Arktiske Universitet
+          </h3>
+          <h4 className="font-bold">2001</h4>
+          <h5>Kurs</h5>
+          <ul>
+            <li className="list-disc">Grunnkurs i informasjonsteknologi</li>
+            <li className="list-disc">Grunnkurs i databaser</li>
+          </ul>
+        </div>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
