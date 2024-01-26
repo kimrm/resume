@@ -15,14 +15,15 @@ const Resume = React.forwardRef((props, ref) => {
           Sammendrag
         </h2>
         <p className="rounded text-orange-950">
-          Allsidig programvareutvikler med omfattende kompetanse innen VB.NET,
-          PHP og Javascript. Bakgrunnen min inkluderer webutvikling og
-          applikasjonsutvikling for Windows-plattformen. Jeg har stor interesse
-          for utvikling av brukervennlige systemer og har konstant fokus på
-          brukeropplevelsen. Jeg er alltid interessert i utfordringer som bidrar
-          til personlig og faglig utvikling. Er lidenskapelig opptatt av
-          Javascript,Typescript,Node.js og React og bruker mye av tiden min på å
-          fordype meg i dette.
+          Allsidig programvareutvikler med omfattende kompetanse innen{" "}
+          <strong>VB.NET, PHP og Javascript</strong>. Bakgrunnen min inkluderer
+          webutvikling og applikasjonsutvikling for Windows-plattformen. Jeg har
+          stor interesse for utvikling av brukervennlige systemer og har
+          konstant fokus på brukeropplevelsen. Jeg er alltid interessert i
+          utfordringer som bidrar til personlig og faglig utvikling. Er
+          lidenskapelig opptatt av
+          <strong>Javascript,Typescript,Node.js og React</strong> og bruker mye
+          av tiden min på å fordype meg i dette.
         </p>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
