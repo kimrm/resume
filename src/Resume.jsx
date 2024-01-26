@@ -20,7 +20,9 @@ const Resume = React.forwardRef((props, ref) => {
           applikasjonsutvikling for Windows-plattformen. Jeg har stor interesse
           for utvikling av brukervennlige systemer og har konstant fokus på
           brukeropplevelsen. Jeg er alltid interessert i utfordringer som bidrar
-          til personlig og faglig utvikling.
+          til personlig og faglig utvikling. Er lidenskapelig opptatt av
+          Javascript,Typescript,Node.js og React og bruker mye av tiden min på å
+          fordype meg i dette.
         </p>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
