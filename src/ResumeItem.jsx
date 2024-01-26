@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 function ResumeItem({ title, description, period, bulletpoints }) {
   return (
     <div className="mb-10">
@@ -7,12 +8,21 @@ function ResumeItem({ title, description, period, bulletpoints }) {
       {bulletpoints && (
         <ul className="list-inside md:list-outside">
           {bulletpoints.map((bullet) => (
-            <li className="list-disc">{bullet}</li>
+            <li key={bullet} className="list-disc">
+              {bullet}
+            </li>
           ))}
         </ul>
       )}
     </div>
   );
 }
+
+ResumeItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  period: PropTypes.string.isRequired,
+  bulletpoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default ResumeItem;
