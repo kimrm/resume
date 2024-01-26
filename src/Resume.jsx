@@ -3,6 +3,9 @@ import profile from "./profile.png";
 import ResumeItem from "./ResumeItem";
 import Work from "./Work";
 import Education from "./Education";
+import github from "./assets/github.png";
+import linkedin from "./assets/linkedin.png";
+import portfolio from "./assets/portfolio.png";
 
 const Resume = React.forwardRef((props, ref) => {
   return (
@@ -10,7 +13,11 @@ const Resume = React.forwardRef((props, ref) => {
       <section className="container mx-auto my-5 p-2 md:p-0">
         <div className="md:flex items-center gap-5">
           <div>
-            <img src={profile} width={100} alt="Kim Rune Møller" />
+            <img
+              src={profile}
+              width={100}
+              alt="Profile image of Kim Rune Møller"
+            />
           </div>
           <div>
             <h1 className="text-3xl md:text-6xl font-black uppercase tracking-widest my-3">
@@ -23,46 +30,73 @@ const Resume = React.forwardRef((props, ref) => {
         </div>
         <div>
           <div className="grid grid-cols-4 gap-y-3 bg-white rounded p-4 my-5 text-xs md:text-base">
-            <div className="bg-gray-50 rounded p-1 text-gray-500">
+            <div className="bg-gray-50 rounded p-1 text-gray-700">
               Fødselsdato
             </div>
             <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               21. november 1978
             </div>
-            <div className="bg-gray-50 rounded p-1 text-gray-500">Adresse</div>
+            <div className="bg-gray-50 rounded p-1 text-gray-700">Adresse</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               Vågahaugen 55, 9303 Silsand
             </div>
-            <div className="bg-gray-50 rounded p-1 text-gray-500">Telefon</div>
+            <div className="bg-gray-50 rounded p-1 text-gray-700">Telefon</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               +47 411 29 887
             </div>
-            <div className="bg-gray-50 rounded p-1 text-gray-500">E-post</div>
+            <div className="bg-gray-50 rounded p-1 text-gray-700">E-post</div>
             <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
               kim@kimrune.dev
             </div>
-            <div className="bg-gray-50 rounded p-1 text-gray-500">På nett</div>
-            <div className="bg-gray-50 col-span-3 rounded p-1 flex flex-col gap-4 text-gray-950">
+            <div className="bg-gray-50 rounded p-1 text-gray-700 flex items-center">
+              Social
+            </div>
+            <div className="bg-gray-50 col-span-3 rounded p-1 py-4 flex gap-5 text-gray-950">
+              <span className="hidden print:block">
+                linkedin.com/in/kim-rune-moller | github.com/kimrm |
+                portfolio.kimrune.dev
+              </span>
               <a
                 href="https://www.linkedin.com/in/kim-rune-moller"
                 target="_blank"
                 rel="noreferrer"
+                className="inline-flex items-center print:hidden opacity-75 hover:opacity-100 hover:scale-105 transition ease-in duration-200"
               >
-                LinkedIn [linkedin.com/in/kim-rune-moller]
+                <img
+                  src={linkedin}
+                  width={25}
+                  alt="LinkedIn profile icon"
+                  className="inline mr-2"
+                />
+                <span className="hidden sm:block">LinkedIn</span>
               </a>
               <a
                 href="https://github.com/kimrm"
                 target="_blank"
                 rel="noreferrer"
+                className="inline-flex items-center print:hidden opacity-75 hover:opacity-100 hover:scale-105 transition ease-in duration-200"
               >
-                GitHub [github.com/kimrm]
+                <img
+                  src={github}
+                  width={25}
+                  alt="GitHub profile icon"
+                  className="inline mr-2"
+                />
+                <span className="hidden sm:block">GitHub</span>
               </a>
               <a
                 href="https://portfolio.kimrune.dev"
                 target="_blank"
                 rel="noreferrer"
+                className="inline-flex items-center print:hidden opacity-75 hover:opacity-100 hover:scale-105 transition ease-in duration-200"
               >
-                Min front-end portfolio [portfolio.kimrune.dev]
+                <img
+                  src={portfolio}
+                  width={25}
+                  alt="Portfolio icon"
+                  className="mr-2"
+                />
+                <span className="hidden sm:block">Frontend portfolio</span>
               </a>
             </div>
           </div>
@@ -73,12 +107,12 @@ const Resume = React.forwardRef((props, ref) => {
           Sammendrag
         </h2>
         <p className="rounded text-orange-950">
-          Allsidig programmerer med omfattende erfaring i .NET, VB.NET,
-          WinForms, C#, PHP og Javascript. Har en solid bakgrunn i webutvikling
-          og applikasjonsutvikling for Windows. Har også interesse for det
-          forretningmessige aspektet ved utvikling av programvare og tjenester.
-          Søker nye utfordringer der jeg kan fortsette å utvikle meg som
-          programmerer samt lære om nye områder innen IT.
+          Jeg er en allsidig programvareutvikler med omfattende kompetanse innen
+          VB.NET, PHP og Javascript. Min bakgrunn inkluderer webutvikling og
+          applikasjonsutvikling for Windows-plattformen. Jeg er lidenskapelig
+          opptatt av å skape brukervennlige systemer og har alltid fokus på
+          brukeropplevelsen. Jeg søker stadig etter utfordringer som bidrar til
+          min personlige og faglige utvikling.
         </p>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
