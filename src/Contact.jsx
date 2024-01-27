@@ -8,7 +8,7 @@ function Contact() {
   return (
     <section className="container mx-auto my-5 p-2 md:p-0">
       <div className="md:flex items-center gap-5">
-        <div className="relative h-24 w-24">
+        <div className="relative h-24 w-24 mb-5">
           <img
             src={profile}
             width={100}
@@ -62,36 +62,27 @@ function Contact() {
               portfolio.kimrune.dev
             </span>
             <Button
-              hoverClass="bg-gray-200"
+              title="LinkedIn Profile"
+              hoverColor="gray-200"
               linkUrl="https://www.linkedin.com/in/kim-rune-moller"
             >
-              <img
-                src={linkedin}
-                width={25}
-                alt="LinkedIn profile icon"
-                className="inline mr-2"
-              />
+              <img src={linkedin} width={25} alt="LinkedIn profile icon" />
               <span className="hidden sm:block">LinkedIn</span>
             </Button>
-            <Button hoverClass="bg-gray-200" linkUrl="https://github.com/kimrm">
-              <img
-                src={github}
-                width={25}
-                alt="GitHub profile icon"
-                className="inline mr-2"
-              />
+            <Button
+              title="GitHub Profile"
+              hoverColor="gray-200"
+              linkUrl="https://github.com/kimrm"
+            >
+              <img src={github} width={25} alt="GitHub profile icon" />
               <span className="hidden sm:block">GitHub</span>
             </Button>
             <Button
-              hoverClass="bg-gray-200"
+              title="Frontend portfolio"
+              hoverColor="gray-200"
               linkUrl="https://portfolio.kimrune.dev"
             >
-              <img
-                src={portfolio}
-                width={25}
-                alt="Portfolio icon"
-                className="mr-2"
-              />
+              <img src={portfolio} width={25} alt="Portfolio icon" />
               <span className="hidden sm:block">Frontend portfolio</span>
             </Button>
           </div>

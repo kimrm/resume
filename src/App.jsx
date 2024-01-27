@@ -51,12 +51,15 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto flex gap-4 mt-3 justify-end p-2">
+      <div className="absolute md:relative top-2 right-2 container mx-auto flex gap-4 mt-3 justify-end p-2">
         <ReactToPrint
           bodyClass="print-agreement"
           content={() => ref.current}
           trigger={() => (
-            <button className="inline-flex uppercase text-sm tracking-wide items-center p-2 border border-orange-200 bg-orange-100 hover:scale-105 hover:bg-orange-200 rounded hover:shadow transition ease-in duration-200">
+            <button
+              title="Skriv ut denne siden"
+              className="inline-flex uppercase text-sm tracking-wide items-center p-2 border border-orange-200 bg-orange-100 hover:scale-105 hover:bg-orange-200 rounded hover:shadow transition ease-in duration-200"
+            >
               skriv ut
             </button>
           )}
