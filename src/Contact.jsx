@@ -34,52 +34,52 @@ function Contact() {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-4 gap-y-3 bg-white rounded p-4 my-5 text-xs md:text-base">
-          <div className="bg-gray-50 rounded p-1 text-gray-700">
+        <div className="grid grid-cols-4 gap-y-3 bg-gray-50 rounded p-4 my-5 text-xs md:text-base">
+          <div className="rounded border-b-white border-b-2 p-2 text-gray-700">
             Fødselsdato
           </div>
-          <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
+          <div className="col-span-3 border-b-white border-b-2 rounded p-2 text-gray-950">
             21. november 1978
           </div>
-          <div className="bg-gray-50 rounded p-1 text-gray-700">Adresse</div>
-          <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
+          <div className=" rounded p-2 border-b-white border-b-2  text-gray-700">
+            Adresse
+          </div>
+          <div className=" col-span-3 rounded p-2 border-b-white border-b-2  text-gray-950">
             Vågahaugen 55, 9303 Silsand
           </div>
-          <div className="bg-gray-50 rounded p-1 text-gray-700">Telefon</div>
-          <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
+          <div className="rounded p-2 border-b-white border-b-2  text-gray-700">
+            Telefon
+          </div>
+          <div className=" col-span-3 rounded p-2 border-b-white border-b-2  text-gray-950">
             +47 411 29 887
           </div>
-          <div className="bg-gray-50 rounded p-1 text-gray-700">E-post</div>
-          <div className="bg-gray-50 col-span-3 rounded p-1 text-gray-950">
+          <div className="rounded p-2 border-b-white border-b-2  text-gray-700">
+            E-post
+          </div>
+          <div className=" col-span-3 rounded p-2 border-b-white border-b-2  text-gray-950">
             kim@kimrune.dev
           </div>
-          <div className="bg-gray-50 rounded p-1 text-gray-700 flex items-center">
+          <div className=" rounded p-1 text-gray-700 flex items-center">
             Social
           </div>
-          <div className="bg-gray-50 col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
+          <div className=" col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
             <span className="hidden print:block">
               linkedin.com/in/kim-rune-moller | github.com/kimrm |
               portfolio.kimrune.dev
             </span>
             <Button
               title="LinkedIn Profile"
-              hoverColor="gray-200"
               linkUrl="https://www.linkedin.com/in/kim-rune-moller"
             >
               <img src={linkedin} width={25} alt="LinkedIn profile icon" />
               <span className="hidden sm:block">LinkedIn</span>
             </Button>
-            <Button
-              title="GitHub Profile"
-              hoverColor="gray-200"
-              linkUrl="https://github.com/kimrm"
-            >
+            <Button title="GitHub Profile" linkUrl="https://github.com/kimrm">
               <img src={github} width={25} alt="GitHub profile icon" />
               <span className="hidden sm:block">GitHub</span>
             </Button>
             <Button
               title="Frontend portfolio"
-              hoverColor="gray-200"
               linkUrl="https://portfolio.kimrune.dev"
             >
               <img src={portfolio} width={25} alt="Portfolio icon" />
