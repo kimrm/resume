@@ -56,14 +56,14 @@ function App() {
           bodyClass="print-agreement"
           content={() => ref.current}
           trigger={() => (
-            <button className="rounded border border-orange-950 hover:bg-orange-100 text-organge-950 px-2 py-1">
-              Skriv ut
+            <button className="inline-flex uppercase text-sm tracking-wide items-center p-2 border border-orange-200 bg-orange-100 hover:scale-105 hover:bg-orange-200 rounded hover:shadow transition ease-in duration-200">
+              skriv ut
             </button>
           )}
         />
         <button
           onClick={handleDownloadPdf}
-          className="rounded border border-orange-950 hover:bg-orange-100 text-organge-950 px-2 py-1 hidden"
+          className="rounded border border-orange-950 hover:bg-orange-100 text-orange-950 px-2 py-1 hidden"
         >
           PDF
         </button>

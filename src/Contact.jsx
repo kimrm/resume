@@ -2,16 +2,26 @@ import profile from "./assets/profile.png";
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 import portfolio from "./assets/portfolio.png";
+import Button from "./Button";
 
 function Contact() {
   return (
     <section className="container mx-auto my-5 p-2 md:p-0">
       <div className="md:flex items-center gap-5">
-        <div>
+        <div className="relative h-24 w-24">
           <img
             src={profile}
             width={100}
+            height={100}
             alt="Profile image of Kim Rune Møller"
+            className="absolute top-0 left-0 z-10 border-2 border-white shadow-lg rotate-2"
+          />
+          <img
+            src={profile}
+            width={100}
+            height={100}
+            alt="Profile image of Kim Rune Møller"
+            className="absolute top-0 left-0 z-0 scale-110 filter blur rotate-6"
           />
         </div>
         <div>
@@ -46,16 +56,14 @@ function Contact() {
           <div className="bg-gray-50 rounded p-1 text-gray-700 flex items-center">
             Social
           </div>
-          <div className="bg-gray-50 col-span-3 rounded p-1 py-4 flex gap-5 text-gray-950">
+          <div className="bg-gray-50 col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
             <span className="hidden print:block">
               linkedin.com/in/kim-rune-moller | github.com/kimrm |
               portfolio.kimrune.dev
             </span>
-            <a
-              href="https://www.linkedin.com/in/kim-rune-moller"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center print:hidden opacity-75 hover:opacity-100 hover:scale-105 transition ease-in duration-200"
+            <Button
+              hoverClass="bg-gray-200"
+              linkUrl="https://www.linkedin.com/in/kim-rune-moller"
             >
               <img
                 src={linkedin}
@@ -64,13 +72,8 @@ function Contact() {
                 className="inline mr-2"
               />
               <span className="hidden sm:block">LinkedIn</span>
-            </a>
-            <a
-              href="https://github.com/kimrm"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center print:hidden opacity-75 hover:opacity-100 hover:scale-105 transition ease-in duration-200"
-            >
+            </Button>
+            <Button hoverClass="bg-gray-200" linkUrl="https://github.com/kimrm">
               <img
                 src={github}
                 width={25}
@@ -78,12 +81,10 @@ function Contact() {
                 className="inline mr-2"
               />
               <span className="hidden sm:block">GitHub</span>
-            </a>
-            <a
-              href="https://portfolio.kimrune.dev"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center print:hidden opacity-75 hover:opacity-100 hover:scale-105 transition ease-in duration-200"
+            </Button>
+            <Button
+              hoverClass="bg-gray-200"
+              linkUrl="https://portfolio.kimrune.dev"
             >
               <img
                 src={portfolio}
@@ -92,7 +93,7 @@ function Contact() {
                 className="mr-2"
               />
               <span className="hidden sm:block">Frontend portfolio</span>
-            </a>
+            </Button>
           </div>
         </div>
       </div>
