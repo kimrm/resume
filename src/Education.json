@@ -3,13 +3,8 @@
     "id": 1,
     "title": "Noroff - School of Technology and Digital Media",
     "period": "2022-2024 (pågår)",
-    "description": "Fagskolegrad som Front-endutvikler.",
-    "bulletpoints": [
-      "Design and Interaction Design",
-      "Javascript and JS frameworks",
-      "CSS, SASS and frameworks",
-      "... med mer"
-    ]
+    "description": "Front-End Developer.",
+    "bulletpoints": ["HTML, CSS, JavaScript, React", "UI/UX Design"]
   },
   {
     "id": 2,
