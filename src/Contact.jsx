@@ -35,18 +35,6 @@ function Contact() {
       </div>
       <div>
         <div className="grid grid-cols-4 gap-y-3 bg-gray-50 rounded p-4 my-5 text-xs md:text-base">
-          <div className="rounded border-b-white border-b-2 p-2 text-gray-700">
-            Fødselsdato
-          </div>
-          <div className="col-span-3 border-b-white border-b-2 rounded p-2 text-gray-950">
-            21. november 1978
-          </div>
-          <div className=" rounded p-2 border-b-white border-b-2  text-gray-700">
-            Adresse
-          </div>
-          <div className=" col-span-3 rounded p-2 border-b-white border-b-2  text-gray-950">
-            Vågahaugen 55, 9303 Silsand
-          </div>
           <div className="rounded p-2 border-b-white border-b-2  text-gray-700">
             Telefon
           </div>
