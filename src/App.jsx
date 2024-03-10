@@ -73,7 +73,7 @@ function App() {
               title="Skriv ut denne siden"
               className="inline-flex uppercase text-sm tracking-wide items-center p-2 border border-orange-200 bg-orange-100 hover:scale-105 hover:bg-orange-200 rounded hover:shadow transition ease-in duration-200"
             >
-              skriv ut
+              {language === "no" ? "skriv ut" : "print"}
             </button>
           )}
         />
@@ -83,21 +83,7 @@ function App() {
         >
           PDF
         </button>
-        {/* <button
-          className="flex gap-2 items-center h-10 px-2 border border-orange-200 rounded-md hover:bg-orange-100 text-orange-950 transition ease-in duration-200 hover:shadow-md"
-          onClick={handleLanguageButtonClick}
-        >
-          <img
-            src={language === "no" ? "./assets/en.png" : "./assets/no.png"}
-            alt={
-              language === "no"
-                ? "Change to English language"
-                : "Endre til Norsk språk"
-            }
-            className="h-6"
-          />
-          {language === "no" ? "English" : "Norsk"}
-        </button> */}
+
         <label className="flex items-center border rounded-md p-2 border-orange-200 justify-center cursor-pointer">
           <input
             type="checkbox"
