@@ -21,7 +21,7 @@ const Resume = React.forwardRef((props, ref) => {
           stor interesse for utvikling av brukervennlige systemer og har
           konstant fokus på brukeropplevelsen. Jeg er alltid interessert i
           utfordringer som bidrar til personlig og faglig utvikling. Er
-          lidenskapelig opptatt av
+          lidenskapelig opptatt av{" "}
           <strong>Javascript,Typescript,Node.js og React</strong> og bruker mye
           av tiden min på å fordype meg i dette.
         </p>
