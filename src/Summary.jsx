@@ -6,7 +6,7 @@ export default function Summary() {
   return (
     <section className="container mx-auto my-10 py-2 md:p-0">
       <h2 className="text-2xl font-black uppercase tracking-widest my-3">
-        Sammendrag
+        {language === "no" ? "Sammendrag" : "Summary"}
       </h2>
       {language === "no" ? (
         <p className="rounded text-orange-950 max-w-prose">
