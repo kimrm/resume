@@ -9,7 +9,7 @@ function Badges() {
       </h2>
       <div className="md:flex gap-4">
         <a
-          className="text-center sm:text-lg my-2 border flex sm:max-w-72 h-24 rounded-md p-2  hover:bg-slate-200 text-slate-900 items-center"
+          className="sm:text-lg my-2 border flex gap-4 sm:max-w-72 h-24 rounded-md p-2  hover:bg-slate-200 text-slate-900 items-center"
           href="https://coursera.org/share/19b2fafdf15662fbdeb3935a89087bfd"
         >
           <img
@@ -20,7 +20,7 @@ function Badges() {
           Meta Front-End Developer Certificate
         </a>
         <a
-          className="text-center sm:text-lg border flex my-2 sm:max-w-72 h-24 rounded-md p-2  hover:bg-slate-200 text-slate-900 items-center"
+          className="sm:text-lg border flex gap-4 my-2 sm:max-w-72 h-24 rounded-md p-2  hover:bg-slate-200 text-slate-900 items-center"
           href="https://www.credly.com/badges/4b881ada-b52c-40d5-8ea3-5e22c27159fa/public_url"
           target="_blank"
           rel="noreferrer"
