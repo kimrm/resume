@@ -1,11 +1,17 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import ReactToPrint from "react-to-print";
 import Resume from "./Resume.jsx";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import { LanguageContext } from "./contexts/LanguageContext.js";
+import Button from "./Button.jsx";
 
 function App() {
+  const queryParams = new URLSearchParams(window.location.search);
+  const term = queryParams.get("lang");
+  const initialLanguage = term === "en" ? "en" : "no";
   const ref = useRef();
+  const [language, setLanguage] = useState(initialLanguage);
 
   const handleDownloadPdf = async () => {
     const element = ref.current;
@@ -49,6 +55,13 @@ function App() {
     pdf.save("cv-kim-rune-møller.pdf");
   };
 
+  function handleLanguageButtonClick() {
+    setLanguage((prevLanguage) => (prevLanguage === "no" ? "en" : "no"));
+  }
+
+  function hangleEnglishChecked() {
+    setLanguage((prevLanguage) => (prevLanguage === "en" ? "no" : "en"));
+  }
   return (
     <>
       <div className="absolute md:relative top-2 right-2 container mx-auto flex gap-4 mt-3 justify-end p-2">
@@ -70,8 +83,42 @@ function App() {
         >
           PDF
         </button>
+        {/* <button
+          className="flex gap-2 items-center h-10 px-2 border border-orange-200 rounded-md hover:bg-orange-100 text-orange-950 transition ease-in duration-200 hover:shadow-md"
+          onClick={handleLanguageButtonClick}
+        >
+          <img
+            src={language === "no" ? "./assets/en.png" : "./assets/no.png"}
+            alt={
+              language === "no"
+                ? "Change to English language"
+                : "Endre til Norsk språk"
+            }
+            className="h-6"
+          />
+          {language === "no" ? "English" : "Norsk"}
+        </button> */}
+        <label className="flex items-center border rounded-md p-2 border-orange-200 justify-center cursor-pointer">
+          <input
+            type="checkbox"
+            value="en"
+            className="sr-only peer"
+            onChange={hangleEnglishChecked}
+            checked={language === "en"}
+          />
+          <div className="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+          <span className="ms-3 text-sm font-medium text-gray-400 dark:text-gray-500">
+            <img
+              src="./assets/en.png"
+              alt="Change to English language"
+              className={language === "en" ? "opacity-100" : "opacity-50"}
+            />
+          </span>
+        </label>
       </div>
-      <Resume ref={ref} />
+      <LanguageContext.Provider value={language}>
+        <Resume ref={ref} />
+      </LanguageContext.Provider>
     </>
   );
 }

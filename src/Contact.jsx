@@ -4,8 +4,12 @@ import linkedin from "./assets/linkedin.png";
 import portfolio from "./assets/portfolio.png";
 import Button from "./Button";
 import Summary from "./Summary";
+import { useContext } from "react";
+import { LanguageContext } from "./contexts/LanguageContext";
 
 function Contact() {
+  const language = useContext(LanguageContext);
+
   return (
     <section className="container mx-auto my-5 p-2 md:p-0">
       <div className="md:flex items-center gap-5">
@@ -30,19 +34,25 @@ function Contact() {
             KIM MØLLER
           </h1>
           <h2 className="text-lg md:text-2xl font-black uppercase tracking-widest my-3">
-            Web- og programvareUtvikler
+            {language === "no"
+              ? "Web- og programvareutvikler"
+              : "Web and Software Developer"}
           </h2>
         </div>
       </div>
       <Summary />
       <h2 className="text-sm font-black uppercase tracking-widest mt-12 mb-3">
-        Kontaktinformasjon
+        {language === "no" ? "Kontaktinformasjon" : "Contact information"}
       </h2>
       <div>
         <div className="grid grid-cols-[200px_minmax(200px,_1fr)] gap-y-1 my-5 text-xs md:text-base">
-          <div className="text-orange-900">Telefon</div>
+          <div className="text-orange-900">
+            {language === "no" ? "Telefon" : "Phone"}{" "}
+          </div>
           <div className="text-orange-950">+47 411 29 887</div>
-          <div className="text-orange-900">E-post</div>
+          <div className="text-orange-900">
+            {language === "no" ? "E-post" : "E-mail"}
+          </div>
           <div className="text-orange-950 text-left">kim@kimrune.dev</div>
         </div>
         <div className=" col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">

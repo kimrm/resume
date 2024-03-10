@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "./contexts/LanguageContext";
 import Contact from "./Contact";
 import ResumeItem from "./ResumeItem";
 import Skills from "./Skills";
@@ -7,12 +8,14 @@ import Work from "./Work";
 import Education from "./Education";
 
 const Resume = React.forwardRef((props, ref) => {
+  const language = useContext(LanguageContext);
+
   return (
     <div ref={ref}>
       <Contact />
       <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
-          Arbeidserfaring
+          {language === "no" ? "Arbeidserfaring" : "Work experience"}
         </h2>
         <div className="mb-10">
           {Work.map((work) => (
@@ -28,7 +31,7 @@ const Resume = React.forwardRef((props, ref) => {
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl font-black uppercase tracking-widest my-3">
-          Utdannelse
+          {language === "no" ? "Utdannelse" : "Education"}
         </h2>
         <div className="mb-10">
           {Education.map((education) => (
@@ -42,8 +45,20 @@ const Resume = React.forwardRef((props, ref) => {
           ))}
         </div>
       </section>
-      <Badges />
-      <Skills />
+      <section className="container mx-auto my-10 p-2 md:p-0">
+        <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+          {language === "no"
+            ? "Sertifisering og andre kurs"
+            : "Certificates and other courses"}
+        </h2>
+        <Badges />
+      </section>
+      <section className="container mx-auto my-10 p-2 md:p-0">
+        <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+          {language === "no" ? "Ferdigheter" : "Skills"}
+        </h2>
+        <Skills />
+      </section>
     </div>
   );
 });
