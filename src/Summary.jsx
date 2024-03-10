@@ -1,10 +1,10 @@
 export default function Summary() {
   return (
-    <section className="container mx-auto my-10 p-2 md:p-0">
+    <section className="container mx-auto my-10 py-2 md:p-0">
       <h2 className="text-2xl font-black uppercase tracking-widest my-3">
         Sammendrag
       </h2>
-      <p className="rounded text-orange-950">
+      <p className="rounded text-orange-950 max-w-prose">
         Allsidig programvareutvikler med omfattende kompetanse innen{" "}
         <strong>VB.NET, PHP og Javascript</strong>. Bakgrunnen min inkluderer
         webutvikling og applikasjonsutvikling for Windows-plattformen. Jeg har

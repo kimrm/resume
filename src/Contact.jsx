@@ -39,17 +39,11 @@ function Contact() {
         Kontaktinformasjon
       </h2>
       <div>
-        <div className="grid grid-cols-4 gap-y-3 bg-gray-50 rounded p-4 my-5 text-xs md:text-base">
-          <div className="rounded p-2 border-b-white border-b-2  text-gray-700">
-            Telefon
-          </div>
-          <div className=" col-span-3 rounded p-2 border-b-white border-b-2  text-gray-950">
-            +47 411 29 887
-          </div>
-          <div className="rounded p-2  text-gray-700">E-post</div>
-          <div className=" col-span-3 rounded p-2 text-gray-950">
-            kim@kimrune.dev
-          </div>
+        <div className="grid grid-cols-[200px_minmax(200px,_1fr)] gap-y-1 my-5 text-xs md:text-base">
+          <div className="text-orange-900">Telefon</div>
+          <div className="text-orange-950">+47 411 29 887</div>
+          <div className="text-orange-900">E-post</div>
+          <div className="text-orange-950 text-left">kim@kimrune.dev</div>
         </div>
         <div className=" col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
           <span className="hidden print:block">
