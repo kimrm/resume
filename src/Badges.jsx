@@ -6,6 +6,8 @@ function Badges() {
     <div className="md:flex gap-4">
       <a
         className="sm:text-lg my-2 border border-orange-100 flex gap-4 sm:max-w-72 h-24 rounded-md p-2  hover:bg-slate-200 text-slate-900 items-center"
+        target="_blank"
+        rel="noreferrer"
         href="https://coursera.org/share/19b2fafdf15662fbdeb3935a89087bfd"
       >
         <img
