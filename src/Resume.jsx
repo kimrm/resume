@@ -42,8 +42,8 @@ const Resume = React.forwardRef((props, ref) => {
           ))}
         </div>
       </section>
-      <Skills />
       <Badges />
+      <Skills />
     </div>
   );
 });
