@@ -26,13 +26,16 @@ function Contact() {
         </div>
         <div>
           <h1 className="text-3xl md:text-6xl font-black uppercase tracking-widest my-3">
-            KIM RUNE MØLLER
+            KIM MØLLER
           </h1>
           <h2 className="text-lg md:text-2xl font-black uppercase tracking-widest my-3">
-            Web og programvareUtvikler
+            Web- og programvareUtvikler
           </h2>
         </div>
       </div>
+      <h2 className="text-sm font-black uppercase tracking-widest mt-12 mb-3">
+        Kontaktinformasjon
+      </h2>
       <div>
         <div className="grid grid-cols-4 gap-y-3 bg-gray-50 rounded p-4 my-5 text-xs md:text-base">
           <div className="rounded p-2 border-b-white border-b-2  text-gray-700">
@@ -41,39 +44,37 @@ function Contact() {
           <div className=" col-span-3 rounded p-2 border-b-white border-b-2  text-gray-950">
             +47 411 29 887
           </div>
-          <div className="rounded p-2 border-b-white border-b-2  text-gray-700">
-            E-post
-          </div>
-          <div className=" col-span-3 rounded p-2 border-b-white border-b-2  text-gray-950">
+          <div className="rounded p-2  text-gray-700">E-post</div>
+          <div className=" col-span-3 rounded p-2 text-gray-950">
             kim@kimrune.dev
           </div>
-          <div className=" rounded p-1 text-gray-700 flex items-center">
-            Social
-          </div>
-          <div className=" col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
-            <span className="hidden print:block">
-              linkedin.com/in/kim-rune-moller | github.com/kimrm |
-              portfolio.kimrune.dev
-            </span>
-            <Button
-              title="LinkedIn Profile"
-              linkUrl="https://www.linkedin.com/in/kim-rune-moller"
-            >
-              <img src={linkedin} width={25} alt="LinkedIn profile icon" />
-              <span className="hidden sm:block">LinkedIn</span>
-            </Button>
-            <Button title="GitHub Profile" linkUrl="https://github.com/kimrm">
-              <img src={github} width={25} alt="GitHub profile icon" />
-              <span className="hidden sm:block">GitHub</span>
-            </Button>
-            <Button
-              title="Frontend portfolio"
-              linkUrl="https://portfolio.kimrune.dev"
-            >
-              <img src={portfolio} width={25} alt="Portfolio icon" />
-              <span className="hidden sm:block">Frontend portfolio</span>
-            </Button>
-          </div>
+        </div>
+        <h2 className="text-sm font-black uppercase tracking-widest mt-12 mb-3">
+          Linker til sosiale medier
+        </h2>
+        <div className=" col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
+          <span className="hidden print:block">
+            linkedin.com/in/kim-rune-moller | github.com/kimrm |
+            portfolio.kimrune.dev
+          </span>
+          <Button
+            title="LinkedIn Profile"
+            linkUrl="https://www.linkedin.com/in/kim-rune-moller"
+          >
+            <img src={linkedin} width={25} alt="LinkedIn profile icon" />
+            <span className="hidden sm:block">LinkedIn</span>
+          </Button>
+          <Button title="GitHub Profile" linkUrl="https://github.com/kimrm">
+            <img src={github} width={25} alt="GitHub profile icon" />
+            <span className="hidden sm:block">GitHub</span>
+          </Button>
+          <Button
+            title="Frontend portfolio"
+            linkUrl="https://portfolio.kimrune.dev"
+          >
+            <img src={portfolio} width={25} alt="Portfolio icon" />
+            <span className="hidden sm:block">Frontend portfolio</span>
+          </Button>
         </div>
       </div>
     </section>

@@ -22,8 +22,10 @@ const Resume = React.forwardRef((props, ref) => {
           konstant fokus på brukeropplevelsen. Jeg er alltid interessert i
           utfordringer som bidrar til personlig og faglig utvikling. Er
           lidenskapelig opptatt av{" "}
-          <strong>Javascript,Typescript,Node.js og React</strong> og bruker mye
-          av tiden min på å fordype meg i dette.
+          <strong className="bg-yellow-100">
+            Javascript,Typescript,Node.js og React
+          </strong>{" "}
+          og bruker mye av tiden min på å fordype meg i dette.
         </p>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
