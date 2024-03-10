@@ -4,7 +4,6 @@ import Resume from "./Resume.jsx";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { LanguageContext } from "./contexts/LanguageContext.js";
-import Button from "./Button.jsx";
 
 function App() {
   const queryParams = new URLSearchParams(window.location.search);
@@ -55,11 +54,7 @@ function App() {
     pdf.save("cv-kim-rune-møller.pdf");
   };
 
-  function handleLanguageButtonClick() {
-    setLanguage((prevLanguage) => (prevLanguage === "no" ? "en" : "no"));
-  }
-
-  function hangleEnglishChecked() {
+  function handleEnglishChecked() {
     setLanguage((prevLanguage) => (prevLanguage === "en" ? "no" : "en"));
   }
   return (
@@ -89,7 +84,7 @@ function App() {
             type="checkbox"
             value="en"
             className="sr-only peer"
-            onChange={hangleEnglishChecked}
+            onChange={handleEnglishChecked}
             checked={language === "en"}
           />
           <div className="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>

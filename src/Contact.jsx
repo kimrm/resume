@@ -18,14 +18,14 @@ function Contact() {
             src={profile}
             width={100}
             height={100}
-            alt="Profile image of Kim Rune Møller"
+            alt="Profile image of Kim Møller"
             className="absolute top-0 left-0 z-10 border-2 border-white shadow-lg rotate-2"
           />
           <img
             src={profile}
             width={100}
             height={100}
-            alt="Profile image of Kim Rune Møller"
+            alt="Profile image of Kim Møller"
             className="absolute top-0 left-0 z-0 scale-110 filter blur rotate-6"
           />
         </div>
@@ -35,7 +35,7 @@ function Contact() {
           </h1>
           <h2 className="text-lg md:text-2xl font-black uppercase tracking-widest my-3">
             {language === "no"
-              ? "Web- og programvareutvikler"
+              ? "Web- og programvare-utvikler"
               : "Web and Software Developer"}
           </h2>
         </div>
@@ -45,7 +45,7 @@ function Contact() {
         {language === "no" ? "Kontaktinformasjon" : "Contact information"}
       </h2>
       <div>
-        <div className="grid grid-cols-[200px_minmax(200px,_1fr)] gap-y-1 my-5 text-xs md:text-base">
+        <div className="grid grid-cols-[100px_minmax(100px,_1fr)] gap-y-1 my-5 text-xs md:text-base">
           <div className="text-orange-900">
             {language === "no" ? "Telefon" : "Phone"}{" "}
           </div>
