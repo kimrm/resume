@@ -3,6 +3,7 @@ import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 import portfolio from "./assets/portfolio.png";
 import Button from "./Button";
+import Summary from "./Summary";
 
 function Contact() {
   return (
@@ -33,6 +34,7 @@ function Contact() {
           </h2>
         </div>
       </div>
+      <Summary />
       <h2 className="text-sm font-black uppercase tracking-widest mt-12 mb-3">
         Kontaktinformasjon
       </h2>
@@ -49,9 +51,6 @@ function Contact() {
             kim@kimrune.dev
           </div>
         </div>
-        <h2 className="text-sm font-black uppercase tracking-widest mt-12 mb-3">
-          Linker til sosiale medier
-        </h2>
         <div className=" col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
           <span className="hidden print:block">
             linkedin.com/in/kim-rune-moller | github.com/kimrm |
