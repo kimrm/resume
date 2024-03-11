@@ -59,7 +59,7 @@ function App() {
   }
   return (
     <>
-      <div className="absolute md:relative top-2 right-2 container mx-auto flex gap-4 mt-3 justify-end p-2">
+      <div className="container mx-auto flex gap-4 mt-3 justify-center sm:justify-end items-end p-2">
         <ReactToPrint
           bodyClass="print-agreement"
           content={() => ref.current}
@@ -79,7 +79,7 @@ function App() {
           PDF
         </button>
 
-        <label className="flex items-center border rounded-md p-2 border-orange-200 justify-center cursor-pointer">
+        <label className="flex items-center rounded-md p-2 border-orange-200 justify-center cursor-pointer">
           <input
             type="checkbox"
             value="en"
@@ -88,12 +88,22 @@ function App() {
             checked={language === "en"}
           />
           <div className="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-          <span className="ms-3 text-sm font-medium text-gray-400 dark:text-gray-500">
-            <img
+          <span
+            className={
+              language === "en"
+                ? "ms-3 text-sm font-medium text-orange-900"
+                : "ms-3 text-sm font-medium text-gray-400"
+            }
+          >
+            {language === "no" ? "English" : "Engelsk"}
+            {/* <img
+              height={20}
               src="./assets/en.png"
               alt="Change to English language"
-              className={language === "en" ? "opacity-100" : "opacity-50"}
-            />
+              className={
+                language === "en" ? "opacity-100 h-5" : "opacity-50 h-5"
+              }
+            /> */}
           </span>
         </label>
       </div>
