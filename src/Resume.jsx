@@ -16,7 +16,7 @@ const Resume = React.forwardRef((props, ref) => {
     <div ref={ref}>
       <Contact />
       <section className="container mx-auto my-10 p-2 md:p-0">
-        <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+        <h2 className="text-2xl dark:text-gray-500 font-black uppercase tracking-widest my-3">
           {language === "no" ? "Arbeidserfaring" : "Work experience"}
         </h2>
         <div className="mb-10">
@@ -42,7 +42,7 @@ const Resume = React.forwardRef((props, ref) => {
         </div>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
-        <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+        <h2 className="text-2xl dark:text-gray-500 font-black uppercase tracking-widest my-3">
           {language === "no" ? "Utdannelse" : "Education"}
         </h2>
         <div className="mb-10">
@@ -68,7 +68,7 @@ const Resume = React.forwardRef((props, ref) => {
         </div>
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
-        <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+        <h2 className="text-2xl dark:text-gray-500 font-black uppercase tracking-widest my-3">
           {language === "no"
             ? "Sertifisering og andre kurs"
             : "Certificates and other courses"}
@@ -76,7 +76,7 @@ const Resume = React.forwardRef((props, ref) => {
         <Badges />
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
-        <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+        <h2 className="text-2xl dark:text-gray-500 font-black uppercase tracking-widest my-3">
           {language === "no" ? "Ferdigheter" : "Skills"}
         </h2>
         <Skills />

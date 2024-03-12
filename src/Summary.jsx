@@ -5,11 +5,11 @@ export default function Summary() {
   const language = useContext(LanguageContext);
   return (
     <section className="container mx-auto my-10 py-2 md:p-0">
-      <h2 className="text-2xl font-black uppercase tracking-widest my-3">
+      <h2 className="text-2xl dark:text-gray-500 font-black uppercase tracking-widest my-3">
         {language === "no" ? "Sammendrag" : "Summary"}
       </h2>
       {language === "no" ? (
-        <p className="rounded text-orange-950 max-w-prose">
+        <p className="rounded text-orange-950 dark:text-gray-200 max-w-prose">
           Allsidig programvareutvikler med omfattende kompetanse innen{" "}
           <strong>VB.NET, PHP og Javascript</strong>. Bakgrunnen min inkluderer
           webutvikling og applikasjonsutvikling for Windows-plattformen. Jeg har
@@ -21,7 +21,7 @@ export default function Summary() {
           av tiden min på å fordype meg i dette.
         </p>
       ) : (
-        <p className="rounded text-orange-950 max-w-prose">
+        <p className="rounded text-orange-950 dark:text-gray-200 max-w-prose">
           Versatile software developer with extensive expertise in{" "}
           <strong>VB.NET, PHP, and Javascript</strong>. My background includes
           web development and application development for the Windows platform.

@@ -5,7 +5,10 @@
 @layer base {
   html {
     @apply bg-orange-50;
+    @apply dark:bg-black;
     @apply text-orange-950;
+    @apply dark:text-slate-100;
+    @apply transition ease-in duration-200;
     @apply antialiased;
     @apply font-sans;
   }

@@ -46,14 +46,18 @@ function Contact() {
       </h2>
       <div>
         <div className="grid grid-cols-[100px_minmax(100px,_1fr)] gap-y-1 my-5">
-          <div className="text-orange-900">
+          <div className="text-orange-900 dark:text-gray-100">
             {language === "no" ? "Telefon" : "Phone"}{" "}
           </div>
-          <div className="text-orange-950">+47 411 29 887</div>
-          <div className="text-orange-900">
+          <div className="text-orange-950 dark:text-gray-200">
+            +47 411 29 887
+          </div>
+          <div className="text-orange-900 dark:text-gray-100">
             {language === "no" ? "E-post" : "E-mail"}
           </div>
-          <div className="text-orange-950 text-left">kim@kimrune.dev</div>
+          <div className="text-orange-950 dark:text-gray-200 text-left">
+            kim@kimrune.dev
+          </div>
         </div>
         <div className=" col-span-3 rounded p-1 py-2 flex gap-5 text-gray-950">
           <span className="hidden print:block">

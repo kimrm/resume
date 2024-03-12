@@ -1,10 +1,39 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import { useQueryParam } from "./hooks/useQueryParam.js";
 import ReactToPrint from "react-to-print";
 import Resume from "./Resume.jsx";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { LanguageContext } from "./contexts/LanguageContext.js";
+import { ThemeContext } from "./contexts/ThemeContext.js";
+import { useSystemColorScheme } from "./hooks/useSystemColorScheme.js";
+
+const svg = {
+  light: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="w-5 h-5 inline-block"
+    >
+      <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+    </svg>
+  ),
+  dark: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="w-4 h-4 inline-block"
+    >
+      <path
+        fillRule="evenodd"
+        d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+        clipRule="evenodd"
+      />
+    </svg>
+  ),
+};
 
 function App() {
   const queryParams = new URLSearchParams(window.location.search);
@@ -13,44 +42,40 @@ function App() {
   const ref = useRef();
   const [language, setLanguage] = useState(initialLanguage);
   useQueryParam({ language });
+  const { systemColorScheme, toggleColorScheme } = useSystemColorScheme();
 
   const handleDownloadPdf = async () => {
     const element = ref.current;
     const canvas = await html2canvas(element, {
-      scale: 1, // You can adjust this scale if needed
+      scale: 1,
       useCORS: true,
     });
 
-    // A4 dimensions in mm
     const pdfWidth = 210;
     const pdfHeight = 297;
-    const marginBottom = 10; // Bottom margin in mm
+    const marginBottom = 10;
 
     const imgData = canvas.toDataURL("image/png");
 
-    // Create a PDF in A4 size
     const pdf = new jsPDF({
       orientation: "portrait",
       unit: "mm",
       format: [pdfWidth, pdfHeight],
     });
 
-    // Calculate the aspect ratio of the canvas and the A4 page
     const canvasRatio = canvas.height / canvas.width;
     const a4Ratio = (pdfHeight - marginBottom) / pdfWidth;
 
     let imgWidth = pdfWidth;
     let imgHeight = imgWidth * canvasRatio;
 
-    // Adjust width or height to fit the content within A4 dimensions, considering the margin
     if (canvasRatio > a4Ratio) {
       imgHeight = pdfHeight - marginBottom;
       imgWidth = imgHeight / canvasRatio;
     }
 
-    // Center the image horizontally and position it at the top vertically
     const x = (pdfWidth - imgWidth) / 2;
-    const y = 0; // Start at the top of the page
+    const y = 0;
 
     pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
     pdf.save("cv-kim-rune-møller.pdf");
@@ -71,7 +96,7 @@ function App() {
               title={
                 language === "en" ? "Print this page" : "Skriv ut denne siden"
               }
-              className="inline-flex uppercase text-sm tracking-wide items-center p-2 border border-orange-200 bg-orange-100 hover:scale-105 hover:bg-orange-200 rounded hover:shadow transition ease-in duration-200"
+              className="inline-flex uppercase text-sm dark:text-orange-950 dark:bg-orange-100 opacity-75  tracking-wide items-center p-2 border border-orange-200 bg-orange-100 hover:scale-105 hover:bg-orange-200 rounded hover:shadow transition ease-in duration-200"
             >
               {language === "no" ? "skriv ut" : "print"}
             </button>
@@ -101,16 +126,14 @@ function App() {
             }
           >
             {language === "no" ? "English" : "Engelsk"}
-            {/* <img
-              height={20}
-              src="./assets/en.png"
-              alt="Change to English language"
-              className={
-                language === "en" ? "opacity-100 h-5" : "opacity-50 h-5"
-              }
-            /> */}
           </span>
         </label>
+        <button
+          className="flex h-10 items-center justify-center"
+          onClick={toggleColorScheme}
+        >
+          {svg[systemColorScheme]}
+        </button>
       </div>
       <LanguageContext.Provider value={language}>
         <Resume ref={ref} />
