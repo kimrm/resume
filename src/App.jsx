@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { useQueryParam } from "./hooks/useQueryParam.js";
 import ReactToPrint from "react-to-print";
-import Resume from "./Resume.jsx";
+import Resume from "./components/Resume.jsx";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { LanguageContext } from "./contexts/LanguageContext.js";

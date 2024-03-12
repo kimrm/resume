@@ -1,5 +1,5 @@
-import cloud101 from "./aws-educate-introduction-to-cloud-101.png";
-import meta from "./meta.png";
+import cloud101 from "../aws-educate-introduction-to-cloud-101.png";
+import meta from "../meta.png";
 
 function Badges() {
   return (

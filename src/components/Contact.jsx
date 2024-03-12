@@ -1,11 +1,11 @@
-import profile from "./assets/Compress/profile2.jpg";
-import github from "./assets/github.png";
-import linkedin from "./assets/linkedin.png";
-import portfolio from "./assets/portfolio.png";
+import profile from "../assets/Compress/profile2.jpg";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
+import portfolio from "../assets/portfolio.png";
 import Button from "./Button";
 import Summary from "./Summary";
 import { useContext } from "react";
-import { LanguageContext } from "./contexts/LanguageContext";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 function Contact() {
   const language = useContext(LanguageContext);
