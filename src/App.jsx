@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useQueryParam } from "./hooks/useQueryParam.js";
 import ReactToPrint from "react-to-print";
 import Resume from "./Resume.jsx";
 import jsPDF from "jspdf";
@@ -11,6 +12,7 @@ function App() {
   const initialLanguage = term === "en" ? "en" : "no";
   const ref = useRef();
   const [language, setLanguage] = useState(initialLanguage);
+  useQueryParam({ language });
 
   const handleDownloadPdf = async () => {
     const element = ref.current;
@@ -57,6 +59,7 @@ function App() {
   function handleEnglishChecked() {
     setLanguage((prevLanguage) => (prevLanguage === "en" ? "no" : "en"));
   }
+
   return (
     <>
       <div className="container mx-auto flex gap-4 mt-3 justify-center sm:justify-end items-end p-2">
@@ -92,7 +95,7 @@ function App() {
             className={
               language === "en"
                 ? "ms-3 text-sm font-medium text-orange-900"
-                : "ms-3 text-sm font-medium text-gray-400"
+                : "ms-3 text-sm font-medium text-gray-500"
             }
           >
             {language === "no" ? "English" : "Engelsk"}
