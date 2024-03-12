@@ -87,7 +87,7 @@ function App() {
   return (
     <>
       <div className="container mx-auto flex mt-3 justify-center sm:justify-end items-end p-2">
-        <div className="border-0 border-r border-r-gray-600 pr-4">
+        <div className="border-0 border-r border-r-orange-200 dark:border-r-gray-600 pr-4">
           <ReactToPrint
             bodyClass="print-agreement"
             content={() => ref.current}
@@ -122,7 +122,7 @@ function App() {
             )}
           />
         </div>
-        <div className="border-0 border-r border-r-gray-600 pr-4">
+        <div className="border-0 border-r border-r-orange-200 dark:border-r-gray-600 pr-4">
           <button
             onClick={handleDownloadPdf}
             className="rounded border border-orange-950 hover:bg-orange-100 text-orange-950 px-2 py-1 hidden"
@@ -130,7 +130,7 @@ function App() {
             PDF
           </button>
         </div>
-        <div className="border-0 border-r border-r-gray-600 pr-4">
+        <div className="border-0 border-r border-r-orange-200 dark:border-r-gray-600 pr-4">
           <button
             className="flex h-10 items-center justify-center"
             onClick={toggleColorScheme}
