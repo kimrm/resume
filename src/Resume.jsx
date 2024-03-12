@@ -4,10 +4,10 @@ import Contact from "./Contact";
 import ResumeItem from "./ResumeItem";
 import Skills from "./Skills";
 import Badges from "./Badges";
-import Work from "./Work";
-import WorkEnglish from "./Work_en";
-import Education from "./Education";
-import EducationEnglish from "./Education_en";
+import Work from "./data/Work";
+import WorkEnglish from "./data/Work_en";
+import Education from "./data/Education";
+import EducationEnglish from "./data/Education_en";
 
 const Resume = React.forwardRef((props, ref) => {
   const language = useContext(LanguageContext);
