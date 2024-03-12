@@ -22,7 +22,6 @@ export function useSystemColorScheme() {
     } else {
       document.documentElement.classList.remove("dark");
     }
-    console.log("systemColorScheme", systemColorScheme);
   }, [systemColorScheme]);
 
   function getInitialSystemColorScheme() {
