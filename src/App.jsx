@@ -68,7 +68,9 @@ function App() {
           content={() => ref.current}
           trigger={() => (
             <button
-              title="Skriv ut denne siden"
+              title={
+                language === "en" ? "Print this page" : "Skriv ut denne siden"
+              }
               className="inline-flex uppercase text-sm tracking-wide items-center p-2 border border-orange-200 bg-orange-100 hover:scale-105 hover:bg-orange-200 rounded hover:shadow transition ease-in duration-200"
             >
               {language === "no" ? "skriv ut" : "print"}
