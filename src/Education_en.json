@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Noroff - School of Technology and Digital Media",
+    "period": "2022-2024 (ongoing)",
+    "description": "Front-End Developer.",
+    "bulletpoints": ["HTML, CSS, JavaScript, React", "UI/UX Design"]
+  },
+  {
+    "id": 2,
+    "title": "Sør-Trøndelag University College",
+    "period": "2007 - 2008",
+    "description": "Various university courses.",
+    "bulletpoints": [
+      "Web technology",
+      "XML technology",
+      "Programming in Visual Basic",
+      ".NET application development",
+      "C#.Net",
+      "Web programming with PHP"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "UiT The Arctic University of Norway",
+    "period": "2001",
+    "description": "",
+    "bulletpoints": [
+      "Introduction to information technology",
+      "Introduction to databases"
+    ]
+  }
+]
