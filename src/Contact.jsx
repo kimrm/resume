@@ -45,7 +45,7 @@ function Contact() {
         {language === "no" ? "Kontaktinformasjon" : "Contact information"}
       </h2>
       <div>
-        <div className="grid grid-cols-[100px_minmax(100px,_1fr)] gap-y-1 my-5 text-xs md:text-base">
+        <div className="grid grid-cols-[100px_minmax(100px,_1fr)] gap-y-1 my-5">
           <div className="text-orange-900">
             {language === "no" ? "Telefon" : "Phone"}{" "}
           </div>
@@ -76,7 +76,7 @@ function Contact() {
             linkUrl="https://portfolio.kimrune.dev"
           >
             <img src={portfolio} width={25} alt="Portfolio icon" />
-            <span className="hidden sm:block">Frontend portfolio</span>
+            <span className="text-sm sm:text-base">Portfolio</span>
           </Button>
         </div>
       </div>
