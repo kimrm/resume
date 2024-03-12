@@ -7,26 +7,38 @@ function Skills() {
     <>
       <ul>
         <li className="list-disc">
-          {language === "no" ? "Programmering" : "Coding"}: VB.Net, PHP,
-          JavaScript, SQL
+          <strong>{language === "no" ? "Programmering" : "Coding"}:</strong>{" "}
+          JavaScript, TypeScript, PHP, VB.Net, SQL
         </li>
         <li className="list-disc">
-          {language === "no" ? "Webutvikling" : "Web Development"}: HTML, CSS,
-          ASP, Laravel, Vue, WordPress
-        </li>
-        <li className="list-disc">Database: MySQL, SQL Server</li>
-        <li className="list-disc">
-          {language === "no" ? "Verktøy" : "Tools"}: Visual Studio, VSCode, Git,
-          Git CLI
+          <strong>
+            {language === "no" ? "Rammeverk/bibliotek" : "Frameworks/libraries"}
+            :
+          </strong>
+          React, Laravel, Wordpress
         </li>
         <li className="list-disc">
-          {language === "no" ? "Systemintegrasjoner" : "Integrations"}: REST
-          API, SOAP, FTP
+          <strong>
+            {language === "no" ? "Webutvikling" : "Web Development"}:
+          </strong>{" "}
+          HTML, CSS, Tailwind CSS, SASS
         </li>
         <li className="list-disc">
-          {language === "no"
-            ? "Språk: Norsk, Engelsk"
-            : "Languages: Norwegian, English"}
+          <strong>Database:</strong> MySQL, SQL Server
+        </li>
+        <li className="list-disc">
+          <strong>{language === "no" ? "Verktøy" : "Tools"}:</strong> Visual
+          Studio, VSCode, Git, Git CLI
+        </li>
+        <li className="list-disc">
+          <strong>
+            {language === "no" ? "Systemintegrasjoner" : "Integrations"}:
+          </strong>{" "}
+          REST API, SOAP, FTP
+        </li>
+        <li className="list-disc">
+          <strong>{language === "no" ? "Språk: " : "Languages: "}</strong>
+          {language === "no" ? "Norsk, Engelsk" : "Norwegian, English"}
         </li>
       </ul>
       {language === "no" ? (
