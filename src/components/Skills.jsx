@@ -8,7 +8,7 @@ function Skills() {
       <ul>
         <li className="list-disc">
           <strong>{language === "no" ? "Programmering" : "Coding"}:</strong>{" "}
-          JavaScript, TypeScript, PHP, VB.Net, SQL
+          JavaScript, TypeScript, PHP, VB.Net, C#, SQL
         </li>
         <li className="list-disc">
           <strong>

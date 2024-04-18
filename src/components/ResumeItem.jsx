@@ -6,7 +6,7 @@ function ResumeItem({ title, description, period, bulletpoints }) {
         {title}
       </h3>
       <h4 className="font-bold">{period}</h4>
-      {description && <p>{description}</p>}
+      {description && <p className="max-w-prose">{description}</p>}
       {bulletpoints && (
         <ul className="list-inside md:list-outside">
           {bulletpoints.map((bullet) => (
