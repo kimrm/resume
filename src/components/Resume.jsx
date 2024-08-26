@@ -77,6 +77,36 @@ const Resume = React.forwardRef((props, ref) => {
       </section>
       <section className="container mx-auto my-10 p-2 md:p-0">
         <h2 className="text-2xl dark:text-gray-500 font-black uppercase tracking-widest my-3">
+          {language === "no" ? "Publikasjoner" : "Publications"}
+        </h2>
+        {language === "no" ? (
+          <p className="max-w-prose">
+            Skrev en kort case study for React meta-rammeverket{" "}
+            <a href="https://remix.run" target="_blank" rel="noreferrer">
+              Remix
+            </a>{" "}
+            som en del av en innlevering i mitt studie hos Noroff. Den kan leses
+            her:{" "}
+            <a
+              href="https://library.noroff.dev/frameworks/remix/remix-case-study/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://library.noroff.dev/frameworks/remix/remix-case-study/
+            </a>
+          </p>
+        ) : (
+          <p className="max-w-prose">
+            Wrote a short case study for the React meta framework Remix during
+            my study at Noroff. It can be read here:{" "}
+            <a href="https://library.noroff.dev/frameworks/remix/remix-case-study/">
+              https://library.noroff.dev/frameworks/remix/remix-case-study/
+            </a>
+          </p>
+        )}
+      </section>
+      <section className="container mx-auto my-10 p-2 md:p-0">
+        <h2 className="text-2xl dark:text-gray-500 font-black uppercase tracking-widest my-3">
           {language === "no" ? "Ferdigheter" : "Skills"}
         </h2>
         <Skills />
