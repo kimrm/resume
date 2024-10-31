@@ -10,7 +10,7 @@ export default function Summary() {
       </h2>
       {language === "no" ? (
         <p className="rounded text-orange-950 dark:text-gray-200 max-w-prose">
-          Allsidig programvareutvikler med omfattende kompetanse innen{" "}
+          Allsidig utvikler med omfattende kompetanse innen{" "}
           <strong>VB.NET, PHP og Javascript</strong>. Bakgrunnen min inkluderer
           webutvikling og applikasjonsutvikling for Windows-plattformen. Jeg har
           stor interesse for utvikling av brukervennlige systemer og har
