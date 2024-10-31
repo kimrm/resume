@@ -91,16 +91,20 @@ const Resume = React.forwardRef((props, ref) => {
               href="https://library.noroff.dev/frameworks/remix/remix-case-study/"
               target="_blank"
               rel="noreferrer"
+              className="underline decoration-dotted underline-offset-2"
             >
-              https://library.noroff.dev/frameworks/remix/remix-case-study/
+              Remix case study
             </a>
           </p>
         ) : (
           <p className="max-w-prose">
             Wrote a short case study for the React meta framework Remix during
             my study at Noroff. It can be read here:{" "}
-            <a href="https://library.noroff.dev/frameworks/remix/remix-case-study/">
-              https://library.noroff.dev/frameworks/remix/remix-case-study/
+            <a
+              href="https://library.noroff.dev/frameworks/remix/remix-case-study/"
+              className="underline decoration-dotted underline-offset-2"
+            >
+              Remix case study
             </a>
           </p>
         )}
