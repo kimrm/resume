@@ -4,7 +4,12 @@
     "title": "Noroff - School of Technology and Digital Media",
     "period": "2022-2024",
     "description": "Higher Professional Degree Front-End utvikling.",
-    "bulletpoints": ["HTML, CSS, JavaScript, React", "UI/UX Design"]
+    "bulletpoints": [
+      "HTML, CSS, JavaScript, React",
+      "UI/UX Design",
+      "Agile utvikling",
+      "CI/CD, GitHub Actions"
+    ]
   },
   {
     "id": 2,

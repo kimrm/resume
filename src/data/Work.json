@@ -2,19 +2,21 @@
   {
     "id": 1,
     "title": "Freelance Utvikler",
-    "description": "",
-    "period": "2022 - nåværende",
+    "description": "Jobber med webløsninger, integrasjoner, og programvareutvikling for Windows.",
+    "period": "2020 - nåværende",
     "bulletpoints": [
-      "Jobber med webløsninger, integrasjoner, og programvareutvikling for Windows.",
-      "Teknologier: VSCode, Visual Studio, VB.Net, SQL, PHP, Laravel, Livewire, Tailwind, Bootstrap, Javascript, HTML, CSS, Vue,WordPress."
+      "JavaScript",
+      "React/Next.js",
+      "PHP/Laravel",
+      ".NET Framework 4.x"
     ]
   },
   {
     "id": 2,
     "title": "Frontend Student Mentor, Noroff Fagskole AS",
-    "description": "Mentor for studentene som går Frontend-utvikling.",
+    "description": "Mentor for studenter på Frontend-utviklingstudiet",
     "period": "april 2024 - juli 2024",
-    "bulletpoints": []
+    "bulletpoints": ["HTML", "CSS", "JavaScript", "React"]
   },
   {
     "id": 3,
@@ -29,13 +31,18 @@
   {
     "id": 4,
     "title": "Utvikler, Dataprodukt AS",
-    "description": "",
+    "description": "Utvikler .NET Framework",
     "period": "2006 - 2020",
     "bulletpoints": [
       "Spilte en nøkkelrolle i utviklingen av FleXi Bilsystem, et Dealer Management System brukt av Mazda og Hyundai forhandlere i Norge.",
       "Ansvarlig for utvikling av Windows-applikasjoner som henter data fra server-løsninger på IBM i.",
       "Arbeidet med integrasjoner via REST API-er, SOAP Web-services og FTP.",
-      "Teknologier: Visual Studio, VB.Net, C#, SQL, PHP. Var litt innom Java og JSP."
+      "Visual Studio",
+      ".NET Framework",
+      "VB.NET",
+      "C#",
+      "SQL",
+      "PHP"
     ]
   },
   {
@@ -44,7 +51,11 @@
     "period": "2002 - 2006",
     "bulletpoints": [
       "Utviklet webløsninger, hjemmesider og nettbutikker for både store og små aktører i Norge. Var blandt annet en nøkkelperson i utviklingen av e-commerce backend til en stor aktør innen fremkalling av digitale bilder.",
-      "Teknologier: HTML, Javascript, CSS, ASP VBScript, VB.NET."
+      "ASP VBScript",
+      "JavaScript",
+      "AJAX",
+      "CSS",
+      "HTML"
     ]
   }
 ]

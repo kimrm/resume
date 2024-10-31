@@ -14,23 +14,26 @@ export default function Summary() {
           <strong>VB.NET, PHP og Javascript</strong>. Bakgrunnen min inkluderer
           webutvikling og applikasjonsutvikling for Windows-plattformen. Jeg har
           stor interesse for utvikling av brukervennlige systemer og har
-          konstant fokus på brukeropplevelsen. Jeg er alltid interessert i
-          utfordringer som bidrar til personlig og faglig utvikling. Er
-          lidenskapelig opptatt av{" "}
-          <strong>Javascript,Typescript,Node.js og React</strong> og bruker mye
-          av tiden min på å fordype meg i dette.
+          konstant fokus på brukeropplevelsen. Er lidenskapelig opptatt av{" "}
+          <strong>Javascript, React, Next.js og webutvikling generelt</strong>{" "}
+          og bruker mye av tiden min på å fordype meg i dette, og jeg er alltid
+          interessert i utfordringer som bidrar til personlig og faglig
+          utvikling.
         </p>
       ) : (
         <p className="rounded text-orange-950 dark:text-gray-200 max-w-prose">
           Versatile software developer with extensive expertise in{" "}
-          <strong>VB.NET, PHP, and Javascript</strong>. My background includes
+          <strong>VB.NET, PHP, and JavaScript.</strong> My background includes
           web development and application development for the Windows platform.
-          I have a strong interest in creating user-friendly systems and
-          consistently focus on user experience. I am always interested in
-          challenges that contribute to personal and professional growth.
-          Passionate about{" "}
-          <strong>Javascript, Typescript, Node.js, and React</strong>, and I
-          spend a lot of my time delving into these technologies.
+          I have a strong interest in creating user-friendly systems and am
+          constantly focused on enhancing user experience. I&apos;m passionate
+          about{" "}
+          <strong>
+            JavaScript, React, Next.js, and web development in general
+          </strong>
+          , spending much of my time delving into these areas. I&apos;m always
+          eager for challenges that contribute to both personal and professional
+          growth.
         </p>
       )}
     </section>

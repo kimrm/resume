@@ -2,19 +2,21 @@
   {
     "id": 1,
     "title": "Freelance Developer",
-    "description": "",
-    "period": "2022 - present",
+    "description": "Working on web solutions, integrations, and software development for Windows.",
+    "period": "2020 - present",
     "bulletpoints": [
-      "Working on web solutions, integrations, and software development for Windows.",
-      "Technologies: VSCode, Visual Studio, VB.Net, SQL, PHP, Laravel, Livewire, Tailwind, Bootstrap, Javascript, HTML, CSS, Vue, WordPress."
+      "JavaScript",
+      "React/Next.js",
+      "PHP/Laravel",
+      ".NET Framework 4.x"
     ]
   },
   {
     "id": 2,
     "title": "Frontend Student Mentor, Noroff Vocational School",
-    "description": "Tutoring and helping the students with JavaScript, React, HTML, CSS, Git, etc.",
+    "description": "Tutoring and helping the students.",
     "period": "April 2024 - July 2024",
-    "bulletpoints": []
+    "bulletpoints": ["HTML", "CSS", "JavaScript", "React"]
   },
   {
     "id": 3,
@@ -35,7 +37,12 @@
       "Played a key role in the development of FleXi Car System, a Dealer Management System used by Mazda and Hyundai dealers in Norway.",
       "Responsible for developing Windows applications that fetch data from server solutions on IBM i.",
       "Worked on integrations via REST APIs, SOAP Web services, and FTP.",
-      "Technologies: Visual Studio, VB.Net, C#, SQL, PHP. Dabbled a bit in Java and JSP."
+      "Visual Studio",
+      ".NET Framework",
+      "VB.NET",
+      "C#",
+      "SQL",
+      "PHP"
     ]
   },
   {
@@ -43,8 +50,12 @@
     "title": "Freelance Web Developer",
     "period": "2002 - 2006",
     "bulletpoints": [
-      "Developed web solutions, websites, and online stores for both large and small players in Norway. Was among other things a key person in the development of e-commerce backend for a major player in digital photo printing.",
-      "Technologies: HTML, Javascript, CSS, ASP VBScript, VB.NET."
+      "Utviklet webløsninger, hjemmesider og nettbutikker for både store og små aktører i Norge. Var blandt annet en nøkkelperson i utviklingen av e-commerce backend til en stor aktør innen fremkalling av digitale bilder.",
+      "ASP VBScript",
+      "JavaScript",
+      "AJAX",
+      "CSS",
+      "HTML"
     ]
   }
 ]
