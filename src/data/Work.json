@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Fullstack Utvikler, Vander AS",
-    "description": "Utvikling og vedlikehold av selvbetjent check-in-løsning for leilighetshotell. Utvikling av backend-løsninger, API-er og integrasjoner. Utvikling av webside med booking.",
+    "description": "Utvikling og vedlikehold av selvbetjent check-in-løsning for leilighetshotell. Utvikling av backend-løsninger, API-er og integrasjoner. Utvikling av webside med bookingmodul.",
     "period": "mars 2025 - nåværende",
     "bulletpoints": ["Laravel", "Livewire", "Flutter", "HTML, CSS, JavaScript"]
   },
