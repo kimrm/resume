@@ -1,6 +1,13 @@
 [
   {
     "id": 1,
+    "title": "Fullstack Developer, Vander AS",
+    "description": "Developing self service check-in for apartments hotel. Developing backend-solutions, APIs and integrations. Developing web site with booking module.",
+    "period": "mars 2025 - present",
+    "bulletpoints": ["Laravel", "Livewire", "Flutter", "HTML, CSS, JavaScript"]
+  },
+  {
+    "id": 2,
     "title": "Freelance Developer",
     "description": "Working on web solutions, integrations, and software development for Windows.",
     "period": "2020 - present",
@@ -12,14 +19,14 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Frontend Student Mentor, Noroff Vocational School",
     "description": "Tutoring and helping the students.",
     "period": "April 2024 - July 2024",
     "bulletpoints": ["HTML", "CSS", "JavaScript", "React"]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "IT Consultant, Studiesenteret Midt-Troms",
     "description": "",
     "period": "2020 - 2022",
@@ -29,7 +36,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Developer, Dataprodukt AS",
     "description": "",
     "period": "2006 - 2020",
@@ -46,7 +53,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Freelance Web Developer",
     "period": "2002 - 2006",
     "bulletpoints": [
